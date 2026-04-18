@@ -145,17 +145,6 @@
       padding: 22px;
     }
 
-    .profile-photo {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 14px;
-      border: 2px solid #fff;
-      box-shadow: 0 4px 12px rgba(20, 35, 60, 0.12);
-    }
-
     .hero-side h2 {
       font-size: 0.95rem;
       letter-spacing: 0.02em;
@@ -260,6 +249,21 @@
       color: var(--muted);
     }
 
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      display: block;
+    }
+
     footer {
       padding: 12px 0 48px;
       color: var(--muted);
@@ -274,6 +278,10 @@
       }
 
       .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -323,8 +331,6 @@
         </div>
 
         <aside class="hero-side">
-          <img src="profile.jpg" alt="Profile photo of Erika Ogata" class="profile-photo" />
-
           <h2>Quick Info</h2>
           <div class="info-list">
             <div class="info-item">
@@ -427,6 +433,17 @@
         <div class="simple-list">
           <div>Apr 2026 — Website launched.</div>
           <div>Mar 2025 — Received the Esaki Award and the Dean’s Award, University of Tsukuba.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-card">
+        <h2 class="section-title">Gallery</h2>
+        <div class="photo-grid">
+          <img src="photo1.jpg" alt="Conference photo 1" />
+          <img src="photo2.jpg" alt="Conference photo 2" />
+          <img src="photo3.jpg" alt="Conference photo 3" />
         </div>
       </div>
     </section>
