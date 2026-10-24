@@ -218,23 +218,30 @@ main {
 }
 
 /* =========================
-   News
+   Curriculum Vitae
 ========================= */
 
-.news-row {
+.cv-section {
+  margin-top: 40px;
+}
+
+.cv-section h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+
+.cv-row {
   display: grid;
-  grid-template-columns: 115px 1fr;
+  grid-template-columns: 130px 1fr;
   gap: 20px;
   border-top: 1px solid var(--line);
-  padding: 13px 0;
+  padding: 14px 0;
 }
 
-.news-row time {
+.cv-year {
   color: var(--muted);
-}
-
-.news-row p {
-  margin: 0;
+  font-size: .92rem;
 }
 
 /* =========================
@@ -305,6 +312,11 @@ main {
 
   .pub {
     grid-template-columns: 48px 1fr;
+  }
+
+  .cv-row {
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
   }
 
   .page {
