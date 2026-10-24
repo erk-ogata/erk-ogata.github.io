@@ -76,9 +76,9 @@ main {
 
 .home {
   display: grid;
-  grid-template-columns: 1.35fr .85fr;
+  grid-template-columns: minmax(0, 1fr) 340px;
   align-items: center;
-  gap: 72px;
+  gap: 50px;
   min-height: 620px;
   padding: 90px 0;
 }
@@ -111,7 +111,7 @@ main {
 ========================= */
 
 .portrait {
-  width: 280px;
+  width: 340px;
   height: 300px;
   max-width: 100%;
   overflow: hidden;
@@ -125,7 +125,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 60% center;
+  object-position: right center;
 }
 
 .portrait-placeholder {
@@ -294,8 +294,8 @@ main {
   }
 
   .portrait {
-    width: 240px;
-    height: 257px;
+    width: 280px;
+    height: 247px;
     margin: 0 auto;
   }
 
